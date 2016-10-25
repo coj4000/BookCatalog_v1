@@ -38,7 +38,14 @@ namespace Sandbox
             // which has a matching ISBN number. The variable matchingBook
             // should be set to this book
             // Hint: You will need a repetition statement
-
+            foreach (Book bo in books)
+            {
+                if (bo.GetISBN() == isbn)
+                {
+                    matchingBook = bo;
+                }
+                
+            }
             return matchingBook;
         }
     }
