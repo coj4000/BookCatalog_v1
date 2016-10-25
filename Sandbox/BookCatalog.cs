@@ -17,12 +17,17 @@ namespace Sandbox
         public void AddBook(Book aBook)
         {
             // Add code that can add the given Book object to the list
+            books.Add(aBook);
         }
 
         public void PrintAllBooks()
         {
             // Add code that can print all books in the list
             // Hint: You will need a repetition statement
+            foreach (Book bog in books)
+            {
+                Console.WriteLine($"Book is called: {bog}");
+            }
         }
 
         public Book LookupBook(string isbn)
